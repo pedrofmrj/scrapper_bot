@@ -27,11 +27,22 @@ Prioridade média (conveniência):
       para quem não quer decorar comandos.
 - [ ] Verificar divergência de ordenação: `sf=1` (usado aqui, verificado no
       JSON da OLX) vs. relatos de `sf=1` zerando resultados em buscas regionais.
+      Parcialmente verificado 2026-10-27 (proxy de leitura, 7 URLs): `sf=1`
+      retornou resultados em paths estadual, regional (região+bairro) e página 2
+      com `q=`; falta confirmar do IP residencial com o scraper (Etapa 5).
 
 Baixa:
 
 - [ ] Exemplos prontos de buscas no `docs/USANDO.md` (eletrônicos, imóveis,
       veículos) baseados em uso real.
+
+Experimentos (não bloqueiam nada):
+
+- [ ] **LLM em estágio 2** — avaliação opcional via LLM só nos candidatos a
+      alerta (depois das regras, respeitando o teto de 5/rodada), saída em JSON
+      validado, texto do anúncio tratado como dado hostil (prompt injection),
+      fallback para as regras se falhar. Não substitui o avaliador: ele é a
+      rede de segurança de custo/teste/explicabilidade.
 
 ## Manutenção
 
