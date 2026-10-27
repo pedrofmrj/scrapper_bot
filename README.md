@@ -59,6 +59,16 @@ Telegram: `/add rtx 5060 max=1.900`, `/add rtx 3090 com defeito`,
 `/scan <id>`, `/pausar <id>`, `/del <id> sim`, `/help`.
 O painel web faz o mesmo e mostra o detalhe de cada avaliação.
 
+## Documentação
+
+- [Guia de uso](docs/USANDO.md) — do zero aos alertas: Telegram, buscas,
+  regras de `obs=`, o que significam 🟢/🟡/💸, painel e rotina
+- [Operação](docs/OPERACAO.md) — Docker/systemd, logs, backup, atualização
+  e troubleshooting (403, layout mudado, Telegram)
+- [Arquitetura](docs/ARQUITETURA.md) — mapa dos módulos, ciclo de vida da
+  busca e decisões técnicas (para contribuidores)
+- [Roadmap](ROADMAP.md) — plano de desenvolvimento deste fork
+
 ## Segurança
 
 O painel usa HTTP Basic **sem HTTPS**: ok em casa/VPN. Para expor na internet,
